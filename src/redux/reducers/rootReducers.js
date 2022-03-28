@@ -11,12 +11,12 @@ const rootPersistConfig = {
     whitelist: []
   };
   
-  const productPersistConfig = {
-    key: 'product',
-    storage,
-    keyPrefix: 'redux-',
-    whitelist: ['sortBy', 'checkout']
-  };
+  // const productPersistConfig = {
+  //   key: 'product',
+  //   storage,
+  //   keyPrefix: 'redux-',
+  //   whitelist: ['sortBy', 'checkout']
+  // };
 
   const appReducer = combineReducers({
     Mydata: tableReducer,

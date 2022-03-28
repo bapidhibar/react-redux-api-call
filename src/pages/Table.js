@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getData } from "../redux/actions/tableAction";
-import axios from 'axios';
+// import axios from 'axios';
 
 
 export default function Table() {
@@ -10,16 +10,16 @@ export default function Table() {
     const dispatch = useDispatch();
     const mydata = useSelector((state) => state.Mydata.mydataPayload); //data access..
 
-    const [name, setName] = useState();
-    const [fatherName, setfName] = useState();
-    const [pAddress, setpAddress] = useState();
-    const [peAddress, setpeAddress] = useState();
-    const [Gender, setGender] = useState("Male");
-    const [pincode, setpincode] = useState();
-    const [emailid, setemailid] = useState();
-    const [dob, setdob] = useState();
-    const [mobileno, setmobileno] = useState();
-    const [city, setcity] = useState("Bihar");
+    // const [name, setName] = useState();
+    // const [fatherName, setfName] = useState();
+    // const [pAddress, setpAddress] = useState();
+    // const [peAddress, setpeAddress] = useState();
+    // const [Gender, setGender] = useState("Male");
+    // const [pincode, setpincode] = useState();
+    // const [emailid, setemailid] = useState();
+    // const [dob, setdob] = useState();
+    // const [mobileno, setmobileno] = useState();
+    // const [city, setcity] = useState("Bihar");
     const [isShow, setisShow] = useState(false);
 
 
@@ -33,101 +33,101 @@ export default function Table() {
 
 
 
-    const changeName = (event) => {
+    // const changeName = (event) => {
 
-        mydata.name = event.target.value;
-        dispatch({
-            type: 'MY_DATA',   //data store..
-            payload: mydata
-        });
-    }
+    //     mydata.name = event.target.value;
+    //     dispatch({
+    //         type: 'MY_DATA',   //data store..
+    //         payload: mydata
+    //     });
+    // }
 
-    const changefName = (event) => {
+    // const changefName = (event) => {
 
-        mydata.fatherName = event.target.value;
-        dispatch({
-            type: 'MY_DATA',
-            payload: mydata
-        });
-    }
-    const changepAddress = (event) => {
+    //     mydata.fatherName = event.target.value;
+    //     dispatch({
+    //         type: 'MY_DATA',
+    //         payload: mydata
+    //     });
+    // }
+    // const changepAddress = (event) => {
 
-        mydata.pAddress = event.target.value;
-        dispatch({
-            type: 'MY_DATA',
-            payload: mydata
-        });
-    }
-    const changepeAddress = (event) => {
+    //     mydata.pAddress = event.target.value;
+    //     dispatch({
+    //         type: 'MY_DATA',
+    //         payload: mydata
+    //     });
+    // }
+    // const changepeAddress = (event) => {
 
-        mydata.peAddress = event.target.value;
-        dispatch({
-            type: 'MY_DATA',
-            payload: mydata
-        });
-    }
-    const changeGender = (event) => {
+    //     mydata.peAddress = event.target.value;
+    //     dispatch({
+    //         type: 'MY_DATA',
+    //         payload: mydata
+    //     });
+    // }
+    // const changeGender = (event) => {
 
-        mydata.Gender = event.target.value;
-        dispatch({
-            type: 'MY_DATA',
-            payload: mydata
-        });
-    }
-    const changepincode = (event) => {
+    //     mydata.Gender = event.target.value;
+    //     dispatch({
+    //         type: 'MY_DATA',
+    //         payload: mydata
+    //     });
+    // }
+    // const changepincode = (event) => {
 
-        mydata.pincode = event.target.value;
-        dispatch({
-            type: 'MY_DATA',
-            payload: mydata
-        });
-    }
-    const changeEmailid = (event) => {
+    //     mydata.pincode = event.target.value;
+    //     dispatch({
+    //         type: 'MY_DATA',
+    //         payload: mydata
+    //     });
+    // }
+    // const changeEmailid = (event) => {
 
-        mydata.emailid = event.target.value;
-        dispatch({
-            type: 'MY_DATA',
-            payload: mydata
-        });
-    }
-    const changedob = (event) => {
+    //     mydata.emailid = event.target.value;
+    //     dispatch({
+    //         type: 'MY_DATA',
+    //         payload: mydata
+    //     });
+    // }
+    // const changedob = (event) => {
 
-        mydata.dob = event.target.value;
-        dispatch({
-            type: 'MY_DATA',
-            payload: mydata
-        });
-    }
-    const changemobileno = (event) => {
+    //     mydata.dob = event.target.value;
+    //     dispatch({
+    //         type: 'MY_DATA',
+    //         payload: mydata
+    //     });
+    // }
+    // const changemobileno = (event) => {
 
-        mydata.mobileno = event.target.value;
-        dispatch({
-            type: 'MY_DATA',
-            payload: mydata
-        });
-    }
-    const changeCity = (event) => {
+    //     mydata.mobileno = event.target.value;
+    //     dispatch({
+    //         type: 'MY_DATA',
+    //         payload: mydata
+    //     });
+    // }
+    // const changeCity = (event) => {
 
-        mydata.city = event.target.value;
-        dispatch({
-            type: 'MY_DATA',
-            payload: mydata
-        });
-    }
+    //     mydata.city = event.target.value;
+    //     dispatch({
+    //         type: 'MY_DATA',
+    //         payload: mydata
+    //     });
+    // }
 
 
     const clickReset = () => {
 
-        setName("");
-        setfName("");
-        setpAddress("");
-        setpeAddress("");
-        setGender("");
-        setpincode("");
-        setemailid("");
-        setdob("");
-        setmobileno("");
-        setcity("");
+        // setName("");
+        // setfName("");
+        // setpAddress("");
+        // setpeAddress("");
+        // setGender("");
+        // setpincode("");
+        // setemailid("");
+        // setdob("");
+        // setmobileno("");
+        // setcity("");
 
 
     };
@@ -138,7 +138,7 @@ export default function Table() {
 
             <table>
                 <tbody>
-                    <tr>
+                    {/* <tr>
                         <td>Counrty</td>
                         <td><input type="text" name="name" value={name} onChange={changeName} /></td>
                     </tr>
@@ -146,7 +146,7 @@ export default function Table() {
                     <tr>
                         <td>University</td>
                         <td><input type="text" name="fathername" value={fatherName} onChange={changefName} /></td>
-                    </tr>
+                    </tr> */}
 
                     {/* <tr>
                         <td>Postal Address</td>
@@ -199,8 +199,8 @@ export default function Table() {
                     </tr> */}
 
                     <tr>
-                        <td><input type="button" value="Reset" onClick={clickReset} /></td>
-                        <td><input type="button" value="Submit Form" onClick={clickHandle} /></td>
+                        {/* <td><input type="button" value="Reset" onClick={clickReset} /></td> */}
+                        <td><input type="button" value="Click here to find colleges" onClick={clickHandle} /></td>
                     </tr>
 
                     {
